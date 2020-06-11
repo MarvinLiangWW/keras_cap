@@ -1,0 +1,33 @@
+1277 examples
+
+most label:
+0.442443226311668
+0.2960062646828504
+0.2615505090054816
+
+random guess:
+33.2576350822
+
+5-fold cross-validation
+52.4490801586
+
+5-fold cross-validation + 3 tiwen sequence
+53.187941466
+
+5-fold cross-validation + 4 tiwen sequence
+53.1384852169
+
+tran 5-fold cross-validation
+52.4334551586
+
+tran 5-fold cross-validation + 3 tiwen sequence
+53.1961845762
+
+tran 5-fold cross-validation + 4 tiwen sequence
+53.0603602169
+
+tran 5-fold cross-validation + etc
+52.5332020997
+
+tran 5-fold cross-validation + etc+3 tiwen sequence
+52.9485286881
