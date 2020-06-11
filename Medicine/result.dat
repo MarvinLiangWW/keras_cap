@@ -1,0 +1,106 @@
+change the parameter of dropout layer can improve the performance.
+
+5 day temp data + 73 +no validation lstm 5
+Test score: 0.92157895118
+Test accuracy: 0.5625
+
+5 day temp data +73 +0.05 validation dense 64  same result as all temp data
+Test score: 0.914236996323
+Test accuracy: 0.6015625
+
+5 day temp data +73 + maxlen =50
+Test score: 0.907701179385
+Test accuracy: 0.60546875
+
+5day temp data +73 +maxlen =200
+Test score: 0.909533545375
+Test accuracy: 0.61328125
+
+5 day temp data + 73 +0.1 validation
+Test score: 0.923662740737
+Test accuracy: 0.58984375
+
+5 day temp data +73 +0.05 validation dense 128
+Test score: 0.918943535537
+Test accuracy: 0.59765625
+
+
+all temp data
+2 epochs
+[ 0.44627097  0.29268143  0.2610476 ]
+Test score: 1.07150934264
+Test accuracy: 0.44140625
+
+73
+Test score: 0.916718203574
+Test accuracy: 0.5859375
+
+55
+Test score: 0.932872086763
+Test accuracy: 0.58203125
+
+5 day temp +55+0.05 dense 64
+Test score: 0.917444765568
+Test accuracy: 0.57421875
+
+5 day temp +55+ maxlen =50
+Test score: 0.918502680957
+Test accuracy: 0.5703125
+
+5 day temp +55+0.05 dense 32
+Test score: 0.923460401595
+Test accuracy: 0.56640625
+
+return_sequence =true 55 +5 day temp lstm 5
+Test score: 0.918540358543
+Test accuracy: 0.58203125
+
+return_sequence =true 55 +5 day temp lstm 2
+Test score: 0.912635996938
+Test accuracy: 0.593828126788
+
+return 73 tiwen lstm 2 maxlen 50
+Test score: 0.96013559401
+Test accuracy: 0.54296875
+
+return 73 tiwen lstm 2 maxlen 100
+Test score: 0.957621909678
+Test accuracy: 0.53125
+
+return 73 tiwen lstm 5 maxlen 100
+Test score: 0.90942062065
+Test accuracy: 0.59765625
+
+return 73 tiwen lstm 10 maxlen 100
+Test score: 0.940178696066
+Test accuracy: 0.550898440182
+
+return 55 tiwen 50zheng pad sequence
+Test score: 0.915660958737
+Test accuracy: 0.609375
+
+return 73 tiwen 50zheng pad sequence
+Test score: 0.927824124694
+Test accuracy: 0.56640625
+
+return 73 tiwen 50zheng
+Test score: 0.929994072765
+Test accuracy: 0.578125
+
+return 55 tiwen 50 zheng
+Test score: 0.920365657657
+Test accuracy: 0.60546875
+
+12 pure temp prediction
+40.1373921665
+
+50 pure temp prediction
+42.1919561525
+
+tiwen + label  return =true
+Test score: 0.93785789609
+Test accuracy: 0.58984375
+
+与上一组是同一个模型 用的不加体温类别的数据
+Test score: 0.914869464934
+Test accuracy: 0.59765625
